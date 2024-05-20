@@ -1,5 +1,5 @@
 const todoItem = ({ todo, setTodos }) => {
-  const { id, title, content, isDone } = todo;
+  const { id, title, content, isDone } = todo; //구조분해할당
 
   const deleteTodo = () => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
