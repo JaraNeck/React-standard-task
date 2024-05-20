@@ -1,7 +1,7 @@
 const TodoForm = ({ setTodos }) => {
   const onSubmit = (e) => {
     e.preventDefault();
-    // 비동기컴포넌트
+    // 비제어컴포넌트
     const formData = new FormData(e.target);
     const title = formData.get("title");
     const content = formData.get("content");
